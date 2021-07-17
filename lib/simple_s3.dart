@@ -79,7 +79,7 @@ class SimpleS3 {
       String _region = subRegion != null ? subRegion.region : region.region;
       String _path = s3FolderPath != "" ? bucketName + "/" + s3FolderPath + "/" + fileName : bucketName + "/" + fileName;
 
-      result = "https://$_bucketName-s3.amazonaws.com/$_path";
+      result = "https://$bucketName-s3.amazonaws.com/$_path";
 
       if (debugLog) {
         debugPrint("Status: Uploaded");
